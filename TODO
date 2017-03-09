@@ -1,83 +1,46 @@
 -*- mode: org; -*-
 #+TITLE: TODO
 * TODO Enhance PHP parser
-List of current keywords (as of [2017-03-09 Thu]):
-
-#+BEGIN_SRC
-abstract
-and
-array
-as
-break
-callable
-case
-catch
-class
-clone
-const
-continue
-declare
-default
-die
-do
-echo
-else
-elseif
-empty
-enddeclare
-endfor
-endforeach
-endif
-endswitch
-endwhile
-eval
-exit
-extends
-final
-finally
-for
-foreach
-function
-global
-goto
-if
-implements
-include
-include_once
-instanceof
-insteadof
-interface
-isset
-list
-namespace
-new
-or
-print
-private
-protected
-public
-require
-require_once
-return
-static
-switch
-throw
-trait
-try
-unset
-use
-var
-while
-xor
-yield
-#+END_SRC
-** TODO Remove obsolete keywords
-** TODO Split keywords
+** DONE Remove obsolete keywords
+   CLOSED: [2017-03-09 Thu]
+failure: never heard of this being a keyword
+header: normal built-in function
+is_array: normal built-in function
+is_set: typo -> isset
+printf: normal built-in function
+setcookie: normal built-in function
+success: never heard of this being a keyword
+** DONE Split keywords
+   CLOSED: [2017-03-10 Fri]
 Split them into two groups:
 - Non-tags: Keywords who are not interpreted as tags
 - Tags: Keywords who are interpreted as tags
-** TODO Add new keywords (non-tags)
-** TODO Implement new keywords (tags)
-
-
-
+** DONE Add new keywords (non-tags)
+   CLOSED: [2017-03-10 Fri]
+__DIR__			word
+__TRAIT__		word
+__METHOD__		word
+__NAMESPACE__		word
+abstract
+callable
+catch
+clone
+final
+finally
+instanceof
+insteadof
+isset
+private
+protected
+public
+throw
+try
+yield
+** TODO Implement new keywords (tags) [0/7]
+- [ ] extends
+- [ ] goto ?
+- [ ] implements
+- [ ] interface
+- [ ] namespace
+- [ ] trait
+- [ ] use ?
