@@ -1,0 +1,83 @@
+-*- mode: org; -*-
+#+TITLE: TODO
+* TODO Enhance PHP parser
+List of current keywords (as of [2017-03-09 Thu]):
+
+#+BEGIN_SRC
+abstract
+and
+array
+as
+break
+callable
+case
+catch
+class
+clone
+const
+continue
+declare
+default
+die
+do
+echo
+else
+elseif
+empty
+enddeclare
+endfor
+endforeach
+endif
+endswitch
+endwhile
+eval
+exit
+extends
+final
+finally
+for
+foreach
+function
+global
+goto
+if
+implements
+include
+include_once
+instanceof
+insteadof
+interface
+isset
+list
+namespace
+new
+or
+print
+private
+protected
+public
+require
+require_once
+return
+static
+switch
+throw
+trait
+try
+unset
+use
+var
+while
+xor
+yield
+#+END_SRC
+** TODO Remove obsolete keywords
+** TODO Split keywords
+Split them into two groups:
+- Non-tags: Keywords who are not interpreted as tags
+- Tags: Keywords who are interpreted as tags
+** TODO Add new keywords (non-tags)
+** TODO Implement new keywords (tags)
+
+
+
