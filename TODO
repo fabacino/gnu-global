@@ -10,12 +10,7 @@ is_set: typo -> isset
 printf: normal built-in function
 setcookie: normal built-in function
 success: never heard of this being a keyword
-** DONE Split keywords
-   CLOSED: [2017-03-10 Fri]
-Split them into two groups:
-- Non-tags: Keywords who are not interpreted as tags
-- Tags: Keywords who are interpreted as tags
-** DONE Add new keywords (non-tags)
+** DONE Add new keywords
    CLOSED: [2017-03-10 Fri]
 __DIR__			word
 __TRAIT__		word
@@ -25,22 +20,26 @@ abstract
 callable
 catch
 clone
+extends
 final
 finally
+goto
+implements
 instanceof
 insteadof
+interface
 isset
+namespace
 private
 protected
 public
 throw
+trait
 try
+use
 yield
-** TODO Implement new keywords (tags) [0/7]
-- [ ] extends
+** TODO Implement new keywords (tags) [2/4]
 - [ ] goto ?
-- [ ] implements
-- [ ] interface
+- [X] interface
 - [ ] namespace
-- [ ] trait
-- [ ] use ?
+- [X] trait
