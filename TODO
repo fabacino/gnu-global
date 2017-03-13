@@ -3,13 +3,13 @@
 * TODO Enhance PHP parser
 ** DONE Remove obsolete keywords
    CLOSED: [2017-03-09 Thu]
-failure: never heard of this being a keyword
+failure: not a keyword
 header: normal built-in function
 is_array: normal built-in function
 is_set: typo -> isset
 printf: normal built-in function
 setcookie: normal built-in function
-success: never heard of this being a keyword
+success: not a keyword
 ** DONE Add new keywords
    CLOSED: [2017-03-10 Fri]
 __DIR__			word
@@ -38,8 +38,9 @@ trait
 try
 use
 yield
-** TODO Implement new keywords (tags) [2/4]
-- [ ] goto ?
+** DONE Implement new keywords (tags) [2/2]
+   CLOSED: [2017-03-13 Mon 22:22]
 - [X] interface
-- [ ] namespace
 - [X] trait
+** DONE Check validity of keywords in PHP 4
+   CLOSED: [2017-03-15 Wed 08:18]
